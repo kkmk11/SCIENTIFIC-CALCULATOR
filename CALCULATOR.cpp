@@ -48,11 +48,13 @@ int main(){
 		printf("\n\n\n\n\t\t\t\t----------THANK YOU !----------\n\n\n\n");
 	}
 }
+
 void clear(char enter){
 	printf("\n\n\n\n\t\t\t\t       Press ENTER to continue");
 	scanf("%c",&enter);
 	system("cls");
 }
+
 void arithmetic(float a1,float b){
 	int c1;
 	printf("Enter the 2 numbers a and b :\n");
@@ -73,6 +75,7 @@ void arithmetic(float a1,float b){
 		break;
 	}
 }
+
 void trignometry(int a){
 	int c2;
 	float r;
@@ -87,28 +90,28 @@ void trignometry(int a){
 		         break;
 		case 2 : printf("\nCos(%d) = %.2f",a,cos(r));
 		         break;
-		case 3 : if(a==90){
+		case 3 : if(a==90 || a==270 || a==450 || a==630 || a==810){
 					printf("\nTan(%d) = Infinite",a);
 				 }
 				 else{
 				 	printf("\nTan(%d) = %.2f",a,tan(r));
 				 }
 		         break;
-		case 4 : if(a==0){
+		case 4 : if(a==0 || a==180 || a==360 || a==540 || a==720 || a==900){
 					printf("\nCot(%d) = Infinite",a);
 			     }
 				 else{
 				 	printf("\nCot(%d) = %.2f",a,1/tan(r));
 				 }
 		         break;
-		case 5 : if(a==90){
+		case 5 : if(a==90 || a==270 || a==450 || a==630 || a==810){
 					printf("\nSec(%d) = Infinite",a);
 				 }
 				 else{
 				 	printf("\nSec(%d) = %.2f",a,1/cos(r));
 				 }
 		         break;
-		case 6 : if(a==0){
+		case 6 : if(a==0 || a==180 || a==360 || a==540 || a==720 || a==900){
 					printf("\nCosec(%d) = Infinite",a);
 			     }
 				 else{
@@ -119,6 +122,7 @@ void trignometry(int a){
 		         break;
     }
 }
+
 void matrix(int r1,int c1,int r2,int c2){
     int i,j,c3;
     printf("\n1)MATRIX ADDITION\n2)MATRIX SUBSTRACTION\n3)MATRIX MULTIPLICATION\n4)MATRIX TRANSPOSE\n");
@@ -218,6 +222,7 @@ void matrix(int r1,int c1,int r2,int c2){
         }  
 	}
 }
+
 void power(float a4,float n){
 	float y;
 	printf("Enter the values 'a' and 'n' in a^n :\n");
@@ -225,6 +230,7 @@ void power(float a4,float n){
 	y=pow(a4,n);
 	printf("(%.2f)^(%.2f) = %.2f",a4,n,y);
 }
+
 void logarithm(float p){
 	float y;
 	int c5;
@@ -243,6 +249,7 @@ void logarithm(float p){
 		        break;
 	}
 }
+
 void poly(float a6,float b6,float c6){
 	float x,root1,root2,discriminant,realPart,imaginaryPart;
 	int f;
