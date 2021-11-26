@@ -1,3 +1,4 @@
+//NOTE : THIS IS A C PROGRAM.NOT A CPP PROGRAM.
 #define PI 3.14159
 #include<stdio.h>
 #include<math.h>
